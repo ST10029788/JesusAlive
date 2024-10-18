@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "35123530913",
+    "project_id": "reflectionsoffaith-13291",
+    "storage_bucket": "reflectionsoffaith-13291.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35123530913:android:5dd245bdb9a9bc65ed34e0",
+        "android_client_info": {
+          "package_name": "com.scriptsquad.reflectionsoffaith"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMMx0Owpdjmix_q2iarU9oGuvj5p7fLdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

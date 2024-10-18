@@ -1,0 +1,139 @@
+package com.scriptsquad.reflectionsoffaith.Church_Events_Feed.activities
+
+import android.Manifest
+import android.app.ProgressDialog
+import android.content.pm.PackageManager
+import android.os.Bundle
+import android.os.Environment
+import android.util.Log
+import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.storage.FirebaseStorage
+import com.scriptsquad.reflectionsoffaith.R
+import com.scriptsquad.reflectionsoffaith.databinding.ActivityDownloadBinding
+import java.io.FileOutputStream
+
+class Download_Video_Activity : AppCompatActivity() {
+
+    // Late-initialized variables for the activity's binding and progress dialog
+    private lateinit var binding: ActivityDownloadBinding
+
+    private lateinit var progressDialog:ProgressDialog
+
+    private var videoUrl = ""
+
+    private companion object{
+        private const val TAG = "DOWNLOADING_VIDEO"
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+
+        binding = ActivityDownloadBinding.inflate(layoutInflater)
+
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(binding.root)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // Get the video URL from the intent
+       videoUrl = intent.getStringExtra("videoUrl")!!
+
+        progressDialog = ProgressDialog(this)
+        progressDialog.setCanceledOnTouchOutside(false)
+        progressDialog.setMessage("Downloading Video")
+        progressDialog.show()
+
+        Log.d(TAG, "onCreate: videoUrl: $videoUrl")
+
+        binding.backBtn.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
+        download()
+
+    }
+
+    // Download the video
+    private fun download(){
+        if (ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            Log.d(TAG, "onCreate: STORAGE PERMISSION is already granted")
+            downloadVideo(videoUrl)
+        } else {
+            Log.d(TAG, "onCreate: STORAGE PERMISSION not granted, LETS request it")
+            requestStoragePermissionLauncher.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        }
+    }
+
+    // Register for the storage permission result
+    private val requestStoragePermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
+            //lets check if granted or not
+            if (isGranted) {
+                Log.d(TAG, "onCreate: STORAGE PERMISSION not granted")
+            } else {
+                Log.d(TAG, "onCreate: STORAGE PERMISSION not granted")
+                Toast.makeText(this@Download_Video_Activity, "Failed Permission Denied", Toast.LENGTH_SHORT).show()
+
+            }
+        }
+
+    // Download the video from Firebase Storage URL
+    private fun downloadVideo(videoUrl: String) {
+        Log.d(TAG, "downloadVideo: Downloading Video")
+        //progress bar
+        progressDialog.setMessage("Downloading Video")
+        progressDialog.show()
+
+        // Download video from Firebase Storage URL
+        val storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(videoUrl)
+        storageReference.getBytes(Long.MAX_VALUE)
+            .addOnSuccessListener { bytes ->
+                Log.d(TAG, "downloadVideo: Video Downloaded")
+                saveToDownloadsFolder(bytes)
+            }
+            .addOnFailureListener { e ->
+                progressDialog.dismiss()
+                Log.e(TAG, "downloadVideo: Failed to download video due to ${e.message}")
+                Toast.makeText(this@Download_Video_Activity, "Failed to download due to ${e.message}", Toast.LENGTH_SHORT).show()
+            }
+    }
+
+    // Save the video to the downloads folder
+    private fun saveToDownloadsFolder(bytes: ByteArray) {
+        Log.d(TAG, "saveToDownloadsFolder: Saving downloaded video")
+
+        val nameWithExtension = "GalleryVideo_${System.currentTimeMillis()}.mp4"
+
+        try {
+            val downloadsFolder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+            downloadsFolder.mkdirs() // Create folder if it does not exist
+            val filepath = "${downloadsFolder.path}/$nameWithExtension"
+
+            FileOutputStream(filepath).use { out ->
+                out.write(bytes)
+            }
+
+            Toast.makeText(this@Download_Video_Activity, "Downloaded Successfully", Toast.LENGTH_SHORT).show()
+            Log.d(TAG, "saveToDownloadsFolder: Saved to Download Folder")
+        } catch (e: Exception) {
+            Log.e(TAG, "saveToDownloadsFolder: Failed to save due to ${e.message}")
+            Toast.makeText(this@Download_Video_Activity, "Failed to save due to ${e.message}", Toast.LENGTH_SHORT).show()
+        } finally {
+            progressDialog.dismiss()
+        }
+    }
+
+
+}
