@@ -33,7 +33,6 @@ import com.scriptsquad.reflectionsoffaith.Bibles.activities.PaperUserActivity
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.messaging.ktx.messaging
 import com.scriptsquad.reflectionsoffaith.Account.Account_Activity
-import com.scriptsquad.reflectionsoffaith.Ai_Page.AI_Activity
 import com.scriptsquad.reflectionsoffaith.R
 // Class representing the main home screen activity
 class Main_Home_Screen : AppCompatActivity() {
@@ -180,9 +179,7 @@ class Main_Home_Screen : AppCompatActivity() {
 
         }
 
-        binding.aiCv.setOnClickListener{
-            startActivity(Intent(this@Main_Home_Screen,AI_Activity::class.java))
-        }
+
 
 
         binding.accountCv.setOnClickListener {
