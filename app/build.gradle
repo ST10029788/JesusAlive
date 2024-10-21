@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace 'com.scriptsquad.reflectionsoffaith'
-    compileSdk 34
+    compileSdk 35
 
 
 
