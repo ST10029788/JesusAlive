@@ -31,5 +31,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UniTalk"
+rootProject.name = "ReflectionsOfFaith"
 include ':app'
