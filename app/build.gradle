@@ -111,20 +111,6 @@ dependencies {
 
 apply plugin: 'org.sonarqube'
 
-sonarqube
-        {
-            properties
-                    {
-                        property "sonar.projectName", "RealmSample"
-                        property "sonar.projectKey", "org.sonarqube:android-simple-sq-scanner-gradle"
-                        property "sonar.language", "java"
-                        property "sonar.sources", "src"
-                        property "sonar.binaries", "build"
-                        property "sonar.sourceEncoding", "UTF-8"
-                        property "sonar.login", "admin"
-                        property "sonar.password", "admin"
-                    }
-        }
 
 
 
