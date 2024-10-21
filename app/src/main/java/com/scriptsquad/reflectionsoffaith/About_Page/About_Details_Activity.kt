@@ -166,9 +166,16 @@ class About_Details_Activity : AppCompatActivity() {
         try {
 
             // URL to load in the web view
+            // URL to load in the web view
             val urlToLoad = "https://github.com/ST10029788/UniTalk.git"
-            binding.webView.loadUrl(urlToLoad)
-            binding.webView.visibility = View.GONE
+
+// Only load the URL when you intend to show the WebView
+            if (shouldDisplayWebView) {
+                binding.webView.loadUrl(urlToLoad)
+                binding.webView.visibility = View.VISIBLE
+            } else {
+                binding.webView.visibility = View.GONE
+            }
 
             // Hide the progress bar and show the web view after 2 seconds
             android.os.Handler().postDelayed({
