@@ -56,6 +56,10 @@ jobs:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
+          
+      - name: Run lint
+        run: ./gradlew lint
+
 
       - name: Build and analyze
         env:
