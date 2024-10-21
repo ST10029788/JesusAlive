@@ -38,7 +38,7 @@
             android:layout_marginTop="18dp"
             android:fontFamily="sans-serif-condensed"
             android:scrollbarSize="28sp"
-            android:text="Add a new Paper Category"
+            android:text="Add a new Bible Category"
             android:textColor="@color/white"
             android:textSize="22sp" />
 

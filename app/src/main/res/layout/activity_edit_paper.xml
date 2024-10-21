@@ -38,7 +38,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-condensed"
-            android:text="Edit Paper Info"
+            android:text="Edit Info"
             android:textColor="@color/white"
             android:textSize="28sp" />
 
@@ -68,7 +68,7 @@
                     android:background="@drawable/shape_edittext01"
                     android:drawableStart="@drawable/ic_pdf_gray"
                     android:drawablePadding="10dp"
-                    android:hint="Paper Title"
+                    android:hint="Title"
                     android:inputType="textPersonName|textCapSentences"
                     android:padding="10dp"
                     android:textColor="@color/black"
@@ -76,7 +76,6 @@
                     android:textSize="16sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
 
             <TextView
@@ -92,7 +91,7 @@
                 android:drawableEnd="@drawable/ic_down_gray"
                 android:drawablePadding="10dp"
                 android:gravity="center_vertical"
-                android:hint="Paper Category"
+                android:hint="Category"
                 android:padding="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/colorGray01"

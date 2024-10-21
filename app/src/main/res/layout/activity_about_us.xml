@@ -182,7 +182,7 @@
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="OPSC7312"
+                                android:text="XBCAD"
                                 android:textColor="#6C6969"
                                 android:textSize="14sp" />
 
@@ -347,10 +347,14 @@
                         android:padding="8dp">
 
                         <ImageView
-                        android:id="@+id/contactIv"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/customeservice" />
+                            android:id="@+id/contactIv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/customeservice"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/textView13"

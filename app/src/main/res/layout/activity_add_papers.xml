@@ -39,7 +39,7 @@
             android:layout_below="@+id/iconIv"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Add Paper"
+            android:text="Add Bible"
             android:textColor="@color/white"
             android:textSize="28sp" />
 
@@ -63,14 +63,13 @@
             android:background="@drawable/shape_edittext01"
             android:drawableStart="@drawable/ic_pdf_gray"
             android:drawablePadding="10dp"
-            android:hint="Paper Title"
+            android:hint="Title"
             android:inputType="textPersonName|textCapWords"
             android:padding="10dp"
             android:textColor="@color/black"
             android:textColorHint="@color/colorGray01" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
 
     <TextView
@@ -86,7 +85,7 @@
         android:drawableEnd="@drawable/ic_down_gray"
         android:drawablePadding="10dp"
         android:gravity="center_vertical"
-        android:hint="Paper Category"
+        android:hint="Category"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textColorHint="@color/colorGray01"
@@ -106,11 +105,11 @@
             android:layout_height="65dp"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
-            app:icon="@drawable/ic_add_photo_white"
             android:layout_toStartOf="@+id/imageIv"
             android:background="@drawable/shape_button01"
-            android:text="Select Paper Image"
-            android:textColor="@color/white" />
+            android:text="Select Image"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_add_photo_white" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_marginTop="10dp"

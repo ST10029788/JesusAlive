@@ -108,8 +108,8 @@
 
             <GridLayout
                 android:id="@+id/gridLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="387dp"
+                android:layout_height="650dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="25dp"
                 android:columnCount="2"
