@@ -396,42 +396,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="SonarQube">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/9vupplq3o65c0ibwrxw5yd5kv/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/9vupplq3o65c0ibwrxw5yd5kv/work.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/acpkmyikf653030w9cllsf3mi/buildfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/acpkmyikf653030w9cllsf3mi/buildfingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/acpkmyikf653030w9cllsf3mi/projectfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/acpkmyikf653030w9cllsf3mi/projectfingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/acpkmyikf653030w9cllsf3mi/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/acpkmyikf653030w9cllsf3mi/work.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/b938ujigxhwacnjswl76ak695/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/b938ujigxhwacnjswl76ak695/work.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/cyxjhnc5luaw152fusp3f610/buildfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/cyxjhnc5luaw152fusp3f610/buildfingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/cyxjhnc5luaw152fusp3f610/projectfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/cyxjhnc5luaw152fusp3f610/projectfingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/cyxjhnc5luaw152fusp3f610/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/cyxjhnc5luaw152fusp3f610/work.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="Edit wording">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_about_us.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_about_us.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_category_papers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_category_papers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_papers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_papers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_student_materials.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_student_materials.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_student_materials_pdf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_student_materials_pdf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_book_pdf_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_book_pdf_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_paper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_paper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lectures.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lectures.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_paper_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_paper_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pdf_add_books.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pdf_add_books.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pdf_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pdf_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pdf_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pdf_edit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_materials_admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_materials_admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_pictures.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_pictures.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_videos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_videos.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-night/shape_toolbar01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/shape_toolbar01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-night/shape_toolbar02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/shape_toolbar02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_toolbar01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_toolbar01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_toolbar02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_toolbar02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/toolbar_bg02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/toolbar_bg02.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -517,25 +488,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Android App.app.executor": "Run",
+    "ResourceManagerPrefKey.ResourceType": "DRAWABLE",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\aariy\\.gradle&quot;
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\aariy\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="ReflectionsOfFaith.app.main" />
@@ -685,7 +656,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729524049054</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Edit wording">
+      <option name="closed" value="true" />
+      <created>1729530902504</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729530902504</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Edit wording">
+      <option name="closed" value="true" />
+      <created>1729530908666</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729530908666</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -705,6 +692,7 @@
     <MESSAGE value="Upgrade java" />
     <MESSAGE value="Build errors" />
     <MESSAGE value="SonarQube" />
-    <option name="LAST_COMMIT_MESSAGE" value="SonarQube" />
+    <MESSAGE value="Edit wording" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit wording" />
   </component>
 </project>
