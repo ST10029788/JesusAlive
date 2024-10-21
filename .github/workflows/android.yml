@@ -31,8 +31,9 @@ jobs:
         wget https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip
         mkdir -p $HOME/android-sdk/cmdline-tools
         unzip commandlinetools-linux-8512546_latest.zip -d $HOME/android-sdk/cmdline-tools
-        yes | $HOME/android-sdk/cmdline-tools/bin/sdkmanager --licenses
-        $HOME/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=$HOME/android-sdk "platform-tools" "platforms;android-33"  # Change 33 to your required API level
+        mv $HOME/android-sdk/cmdline-tools/cmdline-tools $HOME/android-sdk/cmdline-tools/latest
+        yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses
+        $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --sdk_root=$HOME/android-sdk "platform-tools" "platforms;android-33"  # Change 33 to your required API level
         echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
         echo "PATH=$PATH:$HOME/android-sdk/cmdline-tools/latest/bin:$HOME/android-sdk/platform-tools" >> $GITHUB_ENV
 
