@@ -27,7 +27,7 @@ class About_Details_Activity : AppCompatActivity() {
 
     // Lateinit variable to hold the binding for the activity layout
     private lateinit var binding: ActivityAboutDetailBinding
-
+    private val shouldDisplayWebView: Boolean = true
     // Variable to hold the type of about detail
     private var aboutType = ""
     // Override the onCreate method
