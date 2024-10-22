@@ -59,11 +59,11 @@ class Register_Using_Email_Activity : AppCompatActivity() {
 
     // Method to validate the user's input data
     private fun validData() {
-        // Method to validate the user's input data
-        name = binding.nameEt.text.toString().trim()
-        email = binding.emailEt.text.toString().trim()
-        password = binding.passwordEt.text.toString().trim()
-        cPassword = binding.ConfirmpasswordEt.text.toString().trim()
+        // Get user inputs and sanitize
+        name = sanitizeName(binding.nameEt.text.toString().trim())
+        email = sanitizeEmail(binding.emailEt.text.toString().trim())
+        password = sanitizePassword(binding.passwordEt.text.toString().trim())
+        cPassword = sanitizePassword(binding.ConfirmpasswordEt.text.toString().trim())
 
         // Log the user's input data for debugging purposes
         Log.d(TAG, "validateData: email :$email")
@@ -96,6 +96,25 @@ class Register_Using_Email_Activity : AppCompatActivity() {
             registerUser()
         }
     }
+
+    // Method to sanitize name
+    private fun sanitizeName(input: String): String {
+        // Remove any unwanted characters (e.g., digits, special characters)
+        return input.replace("[^\\p{L}\\s]".toRegex(), "")
+    }
+
+    // Method to sanitize email
+    private fun sanitizeEmail(input: String): String {
+        // Remove unwanted characters and return
+        return input.replace("[^\\w@.-]".toRegex(), "")
+    }
+
+    // Method to sanitize password
+    private fun sanitizePassword(input: String): String {
+        // Replace unwanted characters (if necessary)
+        return input.replace("[^\\w@!#$%^&*()-=_+<>?,.;:']".toRegex(), "")
+    }
+
 
     // Method to register the user
     private fun registerUser() {

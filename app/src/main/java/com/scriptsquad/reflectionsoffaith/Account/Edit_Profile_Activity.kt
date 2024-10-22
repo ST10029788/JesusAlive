@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.util.Patterns
 import android.view.Menu
 import android.widget.PopupMenu
 import androidx.activity.result.contract.ActivityResultContracts
@@ -78,18 +79,58 @@ class Edit_Profile_Activity : AppCompatActivity() {
     //Android Developers
 
     private fun validateData() {
-        name = binding.nameEt.text.toString().trim()
-        email = binding.emailEt.text.toString().trim()
-        dob = binding.dobEt.text.toString().trim()
+        name = sanitizeName(binding.nameEt.text.toString().trim())
+        email = sanitizeEmail(binding.emailEt.text.toString().trim())
+        dob = sanitizeDob(binding.dobEt.text.toString().trim())
         phoneCode = binding.countryCodePicker.selectedCountryCodeWithPlus
-        phoneNumber = binding.phoneNumberET.text.toString().trim()
+        phoneNumber = sanitizePhoneNumber(binding.phoneNumberET.text.toString().trim())
 
-        if (imageUri == null) {
-            updateProfileDb(null)
+        if (name.isEmpty()) {
+            binding.nameEt.error = "Name is required"
+            binding.nameEt.requestFocus()
+        } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            binding.emailEt.error = "Invalid Email Pattern"
+            binding.emailEt.requestFocus()
+        } else if (dob.isEmpty()) {
+            binding.dobEt.error = "Date of Birth is required"
+            binding.dobEt.requestFocus()
+        } else if (phoneNumber.isEmpty()) {
+            binding.phoneNumberET.error = "Phone number is required"
+            binding.phoneNumberET.requestFocus()
         } else {
-            uploadProfileImageStorage()
+            // Proceed with profile update
+            if (imageUri == null) {
+                updateProfileDb(null)
+            } else {
+                uploadProfileImageStorage()
+            }
         }
     }
+
+    // Method to sanitize name
+    private fun sanitizeName(input: String): String {
+        // Remove unwanted characters (e.g., digits, special characters)
+        return input.replace("[^\\p{L}\\s]".toRegex(), "")
+    }
+
+    // Method to sanitize email
+    private fun sanitizeEmail(input: String): String {
+        // Remove unwanted characters and return
+        return input.replace("[^\\w@.-]".toRegex(), "")
+    }
+
+    // Method to sanitize date of birth
+    private fun sanitizeDob(input: String): String {
+        // Optionally, validate date format (e.g., YYYY-MM-DD)
+        return input // Return as-is for now; add date validation as needed
+    }
+
+    // Method to sanitize phone number
+    private fun sanitizePhoneNumber(input: String): String {
+        // Remove unwanted characters (e.g., non-digit characters)
+        return input.replace("[^\\d]".toRegex(), "")
+    }
+
 
     private fun uploadProfileImageStorage() {
         Log.d(TAG, "uploadProfileImageStorage: ")

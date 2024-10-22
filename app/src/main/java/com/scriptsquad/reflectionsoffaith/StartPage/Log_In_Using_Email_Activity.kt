@@ -63,31 +63,45 @@ class Log_In_Using_Email_Activity : AppCompatActivity() {
     private var password = ""
 
     // Method to validate the user's input data
-    private fun validateData(){
+    private fun validateData() {
         // Get the user's email and password from the input fields
-        email=binding.emailEt.text.toString().trim()
-        password=binding.passwordEt.text.toString().trim()
+        email = binding.emailEt.text.toString().trim()
+        password = binding.passwordEt.text.toString().trim()
 
-        // Log the user's email and password for debugging purposes
-        Log.d(TAG,"validate email: $email")
-        Log.d(TAG,"validate password: $password")
+        // Log the user's email for debugging purposes
+        Log.d(TAG, "validate email: $email")
 
         // Check if the email is valid
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            binding.emailEt.error="Invalid Email Format"
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            binding.emailEt.error = "Invalid Email Format"
             binding.emailEt.requestFocus()
         }
-        // Check if the password is empty
-        else if (password.isEmpty()){
-            binding.passwordEt.error="Enter Password"
+        // Check for password strength (length and character checks)
+        else if (password.length < 6) { // Minimum length check, adjust as needed
+            binding.passwordEt.error = "Password must be at least 6 characters"
             binding.passwordEt.requestFocus()
-        }
-        else{
-            // If the data is valid, login the user
+        } else {
+            // If the data is valid, sanitize inputs before login
+            email = sanitizeEmail(email)
+            password = sanitizePassword(password)
+
+            // If inputs are sanitized, proceed to login
             loginUser()
         }
-
     }
+
+    // Method to sanitize email
+    private fun sanitizeEmail(input: String): String {
+        // Replace unwanted characters and return
+        return input.replace("[^\\w@.-]".toRegex(), "")
+    }
+
+    // Method to sanitize password (you can add more rules if needed)
+    private fun sanitizePassword(input: String): String {
+        // Replace unwanted characters (if necessary)
+        return input.replace("[^\\w@!#$%^&*()-=_+<>?,.;:']".toRegex(), "")
+    }
+
     // Method to login the user
     private fun loginUser(){
         // Log the login attempt for debugging purposes

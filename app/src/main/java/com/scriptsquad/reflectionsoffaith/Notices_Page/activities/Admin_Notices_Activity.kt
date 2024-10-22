@@ -102,18 +102,27 @@ class Admin_Notices_Activity : AppCompatActivity() {
 
 
     private fun validateData() {
-
         Log.d(TAG, "validateData: ")
 
         noticeTitle = binding.noticeEt.text.toString().trim()
         noticeDescription = binding.descriptionEt.text.toString().trim()
 
+        // Sanitize inputs
+        noticeTitle = sanitizeInput(noticeTitle)
+        noticeDescription = sanitizeInput(noticeDescription)
+
         if (noticeTitle.isEmpty()) {
             binding.noticeEt.requestFocus()
-            binding.noticeEt.error = "Field Cannot be empty"
+            binding.noticeEt.error = "Field cannot be empty"
+        } else if (noticeTitle.length > 100) { // Limit title length
+            binding.noticeEt.requestFocus()
+            binding.noticeEt.error = "Title is too long (max 100 characters)"
         } else if (noticeDescription.isEmpty()) {
             binding.descriptionEt.requestFocus()
             binding.descriptionEt.error = "Field cannot be empty"
+        } else if (noticeDescription.length > 500) { // Limit description length
+            binding.descriptionEt.requestFocus()
+            binding.descriptionEt.error = "Description is too long (max 500 characters)"
         } else if (imageUri == null) {
             MotionToast.createColorToast(
                 this@Admin_Notices_Activity,
@@ -125,11 +134,17 @@ class Admin_Notices_Activity : AppCompatActivity() {
                 ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold)
             )
         } else {
-            //data validate begin upload
+            // Data validate and begin upload
             uploadBookImageToStorage()
         }
-
     }
+
+    private fun sanitizeInput(input: String): String {
+        // Example sanitization: strip HTML tags and limit length
+        val sanitized = input.replace(Regex("<[^>]*>"), "") // Remove HTML tags
+        return sanitized.replace(Regex("[^\\w\\s,.!?'-]"), "") // Allow only certain characters
+    }
+
 
     private fun uploadBookImageToStorage() {
         Log.d(TAG, "uploadToStorage: uploading to storage....")
