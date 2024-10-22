@@ -1,16 +1,59 @@
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-    id 'com.google.gms.google-services'
-    id 'com.google.firebase.crashlytics'
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.2'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.2'
+        classpath 'com.android.tools.build:gradle:8.7.1'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:4.0.0.2929"
+    }
+    repositories {
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+    }
 }
+
+plugins {
+    id 'com.android.application' version '8.7.1' apply false
+    id 'com.android.library' version '8.7.1' apply false
+    id 'org.jetbrains.kotlin.android' version '2.0.20' apply false
+    id 'org.sonarqube' version "4.0.0.2929" apply false
+}
+
+allprojects {
+    configurations {
+        all {
+            resolutionStrategy {
+                dependencySubstitution {
+                    substitute(module("com.github.barteksc:android-pdf-viewer"))
+                            .using(module("com.github.DImuthuUpe:AndroidPdfViewer:3.1.0-beta.1"))
+                            .because("Library is in a process of ownership transfer. Jitpack and Jcenter are not reliable.")
+                }
+            }
+        }
+    }
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "ReflectionsOfFaith"
+        property "sonar.projectName", "ReflectionsOfFaith"
+    }
+}
+
+// Apply plugins for the application module
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'org.sonarqube'
 
 android {
     namespace 'com.scriptsquad.reflectionsoffaith'
     compileSdk 35
 
-
-
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
     defaultConfig {
         applicationId "com.scriptsquad.reflectionsoffaith"
         minSdk 23
@@ -18,10 +61,7 @@ android {
         targetSdk 35
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-
     }
 
     buildTypes {
@@ -30,13 +70,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
     buildFeatures {
         viewBinding true
         buildConfig = true
@@ -59,15 +102,14 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging-ktx:24.0.3'
     implementation 'com.google.firebase:firebase-firestore:25.1.1'
     implementation 'androidx.activity:activity-ktx:1.9.3'
-        implementation 'androidx.test:core-ktx:1.6.1'
+    implementation 'androidx.test:core-ktx:1.6.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
-    implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation "com.google.android.gms:play-services-auth:21.2.0"
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
     implementation 'com.github.Spikeysanju:MotionToast:1.4'
-    implementation 'com.github.bumptech.glide:annotations:4.16.0'
     implementation "com.github.bumptech.glide:okhttp3-integration:4.16.0"
     def lottieVersion = '6.4.0'
     implementation "com.airbnb.android:lottie:$lottieVersion"
@@ -77,8 +119,8 @@ dependencies {
     implementation 'com.github.barteksc:android-pdf-viewer:3.1.0-beta.1'
     implementation 'com.github.captain-miao:optroundcardview:1.1.0'
     implementation 'com.google.firebase:firebase-core:21.1.1'
-    implementation("com.vanniktech:android-image-cropper:4.5.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation "com.vanniktech:android-image-cropper:4.5.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.12.0"
     implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'com.firebaseui:firebase-ui-database:8.0.2'
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
@@ -88,30 +130,13 @@ dependencies {
     implementation 'com.google.maps.android:android-maps-utils:3.8.0'
     implementation 'com.google.android.gms:play-services-maps:19.0.0'
     implementation 'com.squareup.okhttp3:okhttp:4.12.0'
-    implementation'com.google.ai.client.generativeai:generativeai:0.9.0'
-    implementation 'com.github.captain-miao:optroundcardview:1.1.0'
-    implementation 'com.android.volley:volley:1.2.1'
-    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
-    implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
-    implementation 'com.google.maps.android:android-maps-utils:3.8.0'
+    implementation 'com.google.ai.client.generativeai:generativeai:0.9.0'
     implementation "androidx.biometric:biometric:1.1.0"
 
     // Mockito core library
-    testImplementation 'org.mockito:mockito-core:5.0.0' // Check for the latest version
-
-    // If you are using AndroidX and need to mock Android classes
-    testImplementation 'org.mockito:mockito-inline:5.0.0' // For mocking final classes and methods
-
-    // JUnit for testing
-    testImplementation 'junit:junit:4.13.2'
-
-
-
+    testImplementation 'org.mockito:mockito-core:5.0.0'
+    testImplementation 'org.mockito:mockito-inline:5.0.0'
 }
-
-apply plugin: 'org.sonarqube'
-
-
 
 
 

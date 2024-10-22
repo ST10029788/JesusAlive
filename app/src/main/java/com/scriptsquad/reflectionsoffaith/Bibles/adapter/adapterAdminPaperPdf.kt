@@ -54,7 +54,7 @@ class adapterAdminPaperPdf:RecyclerView.Adapter<adapterAdminPaperPdf.HolderAdmin
         val timestamp = model.timestamp
         val imageUrl = model.imageUrl
 
-      holder.moreBtn.visibility=View.VISIBLE
+        holder.moreBtn.visibility=View.VISIBLE
 
         //covet time stamp to dd/MM/yyyy format
 
@@ -80,6 +80,7 @@ class adapterAdminPaperPdf:RecyclerView.Adapter<adapterAdminPaperPdf.HolderAdmin
         holder.moreBtn.setOnClickListener {
             moreOptionsDialog(model, holder)
         }
+
         // handel item click show pdf Detail Activity
         holder.itemView.setOnClickListener {
             //intent with book id
@@ -91,7 +92,7 @@ class adapterAdminPaperPdf:RecyclerView.Adapter<adapterAdminPaperPdf.HolderAdmin
     }
 
     override fun getItemCount(): Int {
-      return  pdfArrayList.size
+        return  pdfArrayList.size
     }
 
 
@@ -115,7 +116,7 @@ class adapterAdminPaperPdf:RecyclerView.Adapter<adapterAdminPaperPdf.HolderAdmin
                 if (position == 0) {
 
                     //Edit is Clicked
-                  val intent = Intent(context, EditPaperActivity::class.java)
+                    val intent = Intent(context, EditPaperActivity::class.java)
                     intent.putExtra("paperId",paperId) // passed bookId used to edit book
                     context.startActivity(intent)
 
