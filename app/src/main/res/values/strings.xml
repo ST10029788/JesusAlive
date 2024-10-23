@@ -96,7 +96,7 @@
     <string name="post_ad_button">Post Ad</string>
     <string name="ad_details">Ad Details</string>
     <string name="_00">00</string>
-    <string name="new">New</string>
+    <string name="new_">New</string>
     <string name="title_ad_details">Title</string>
     <string name="description_ad_details">Description</string>
     <string name="address">Address</string>

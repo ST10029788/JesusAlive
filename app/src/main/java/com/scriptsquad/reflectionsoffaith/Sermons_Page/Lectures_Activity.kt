@@ -9,13 +9,13 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import com.scriptsquad.reflectionsoffaith.Utilities.Utils
-import com.scriptsquad.reflectionsoffaith.databinding.ActivityLecturesBinding
+import com.scriptsquad.reflectionsoffaith.databinding.ActivitySermonsBinding
 
 class Lectures_Activity : AppCompatActivity() {
-    private lateinit var binding: ActivityLecturesBinding
+    private lateinit var binding: ActivitySermonsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLecturesBinding.inflate(layoutInflater)
+        binding = ActivitySermonsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
