@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
-            android:text="Devotional Material"
+            android:text="@string/devotional_material"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/titleTv"
             android:layout_centerHorizontal="true"
-            android:text="Category"
+            android:text="@string/category_devotional_admin"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -63,7 +63,7 @@
         android:id="@+id/searchEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search"
+        android:hint="@string/search_devotional_admin"
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:drawableStart="@drawable/ic_search_gray"

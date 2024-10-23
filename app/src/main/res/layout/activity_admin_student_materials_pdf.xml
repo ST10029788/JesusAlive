@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
-            android:text="Bibles"
+            android:text="@string/bibles"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/titleTv"
             android:layout_centerHorizontal="true"
-            android:text="Category"
+            android:text="@string/category_devotional"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -69,7 +69,7 @@
             android:drawableStart="@drawable/ic_search_gray"
             android:drawablePadding="10dp"
             android:background="@android:color/transparent"
-            android:hint="Search"
+            android:hint="@string/search_devotional"
             android:padding="10dp"
             android:textColorHint="@color/colorGray01" />
 

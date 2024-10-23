@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="8dp"
-            android:text="Admin Dashboard"
+            android:text="@string/admin_dashboard"
             android:textColor="@color/light_mode_text"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -69,7 +69,7 @@
             android:background="@color/white"
             android:drawableStart="@drawable/ic_search_gray"
             android:drawablePadding="10dp"
-            android:hint="Search"
+            android:hint="@string/search"
             android:padding="10dp"
             android:textColor="@color/light_mode_text"
             android:textColorHint="#633B48" />
@@ -107,7 +107,7 @@
             android:layout_weight="1"
             android:background="@drawable/shape_button01"
             android:minHeight="50dp"
-            android:text="+ Add Category"
+            android:text="@string/add_category"
             android:textAllCaps="false"
             android:textColor="@color/light_mode_text"
             app:backgroundTint="@color/light_mode_light_accent" />

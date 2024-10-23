@@ -40,7 +40,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/gemsbuckblack_axng"
-            android:text="Add Pictures"
+            android:text="@string/add_pictures"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -65,7 +65,7 @@
             android:drawablePadding="10dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:hint="Add Picture HashTag or Title"
+            android:hint="@string/add_picture_hashtag_or_title"
             android:inputType="textPersonName|textCapWords"
             android:padding="10dp"
             android:textColor="@color/black"
@@ -118,7 +118,7 @@
         android:id="@+id/submitBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Publish Image"
+        android:text="@string/publish_image"
         app:cornerRadius="8dp"
         android:layout_below="@+id/imageIv"
         android:layout_toEndOf="@+id/ImagePickBtn"
