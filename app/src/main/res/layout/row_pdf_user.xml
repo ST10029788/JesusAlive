@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/TextAppearance.MaterialComponents.Headline6"
-            android:text="Book Title"
+            android:text="@string/book_title_user"
             android:layout_toEndOf="@+id/pdfRl"
             android:ellipsize="end"
             android:maxLines="1"/>
@@ -50,7 +50,7 @@
             android:id="@+id/descriptionTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Book Description"
+            android:text="@string/book_description"
             android:layout_toEndOf="@id/pdfRl"
             android:layout_below="@+id/titleTv"
             android:ellipsize="end"
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/TextAppearance.MaterialComponents.Caption"
-            android:text="Category"
+            android:text="@string/category_book_user"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:maxLines="1"/>
@@ -73,7 +73,7 @@
             style="@style/TextAppearance.MaterialComponents.Caption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="14 MB"
+            android:text="@string/_14_mb_book_user"
             android:layout_toEndOf="@+id/pdfRl"
             android:maxLines="1"
             android:layout_alignParentBottom="true"/>
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/sizeTv"
             android:layout_toStartOf="@+id/categoryTv"
-            android:text="dd/MM/yyyy"
+            android:text="@string/dd_mm_yyyy"
             android:layout_alignParentBottom="true"
             android:textAlignment="center"/>
 

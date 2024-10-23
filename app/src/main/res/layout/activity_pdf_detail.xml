@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Details"
+            android:text="@string/details_pdf"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -79,7 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/pdfRl"
-                    android:text="Title"
+                    android:text="@string/title_pdf"
                     android:textColor="@color/black" />
 
 
@@ -97,7 +97,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
-                            android:text="Category"
+                            android:text="@string/category_pdf"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -107,7 +107,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="1"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="@color/black" />
 
                     </TableRow>
@@ -120,7 +120,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
-                            android:text="Date"
+                            android:text="@string/date_pdf"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -130,7 +130,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="1"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="@color/black" />
 
                     </TableRow>
@@ -142,7 +142,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
-                            android:text="Size"
+                            android:text="@string/size_pdf"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -152,7 +152,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="1"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="@color/black" />
 
                     </TableRow>
@@ -164,7 +164,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
-                            android:text="Views"
+                            android:text="@string/views"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -174,7 +174,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="1"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="@color/black" />
 
                     </TableRow>
@@ -186,7 +186,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
-                            android:text="Downloads"
+                            android:text="@string/downloads"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -196,7 +196,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="1"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="@color/black" />
 
                     </TableRow>
@@ -208,7 +208,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
-                            android:text="Pages"
+                            android:text="@string/pages_pdf"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -217,7 +217,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="5dp"
                             android:layout_weight="1"
-                            android:text="N/A"
+                            android:text="@string/n_a"
                             android:textColor="@color/black" />
 
                     </TableRow>
@@ -233,7 +233,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Description"
+                android:text="@string/description_pdf"
                 android:textColor="@color/black" />
 
             <!-- View seprate -->
@@ -252,7 +252,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="Comments"
+                    android:text="@string/comments_pdf"
                     android:padding="5dp"
                     android:textSize="16sp"/>
 
@@ -296,7 +296,7 @@
             android:layout_weight="1"
             android:background="@color/design_default_color_primary"
             android:drawableTop="@drawable/ic_book_white"
-            android:text="Read"
+            android:text="@string/read_pdf"
             android:textColor="@color/white"
             android:textSize="10sp" />
 
@@ -307,7 +307,7 @@
             android:layout_weight="1"
             android:background="@color/design_default_color_primary"
             android:drawableTop="@drawable/ic_download_white"
-            android:text="Download"
+            android:text="@string/download_pdf"
             android:textColor="@color/white"
             android:textSize="10sp" />
 

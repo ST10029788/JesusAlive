@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_location_gray"
             android:drawableEnd="@drawable/ic_next_gray"
-            android:text="Choose Location" />
+            android:text="@string/choose_location" />
 
     </androidx.cardview.widget.CardView>
 
@@ -42,7 +42,7 @@
             android:background="@android:color/transparent"
             android:drawableStart="@drawable/ic_search_gray"
             android:drawablePadding="10dp"
-            android:hint="Search"
+            android:hint="@string/search_location"
             android:padding="10dp"
             android:textColor="@color/light_mode_text"
             android:textColorHighlight="@color/light_mode_text" />
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
-        android:text="Browse Category"
+        android:text="@string/browse_category"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView

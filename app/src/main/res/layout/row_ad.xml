@@ -35,7 +35,7 @@
             android:layout_toStartOf="@id/favBtn"
             android:layout_toEndOf="@id/ImageIv"
             android:maxLines="1"
-            android:text="The Ad Title"
+            android:text="@string/the_ad_title"
             android:textColor="@color/light_mode_text" />
 
         <TextView
@@ -49,7 +49,7 @@
             android:layout_toEndOf="@id/ImageIv"
             android:ellipsize="end"
             android:lines="3"
-            android:text="The long description of the Ad thst can be of multiple lines but will show here in 3 lines"
+            android:text="@string/the_long_description_of_the_ad_thst_can_be_of_multiple_lines_but_will_show_here_in_3_lines"
             android:textColor="@color/light_mode_text" />
 
         <ImageButton
@@ -75,7 +75,7 @@
             android:layout_toEndOf="@id/ImageIv"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Address of the Ad"
+            android:text="@string/address_of_the_ad"
             android:textColor="@color/light_mode_text" />
 
 
@@ -86,7 +86,7 @@
             android:layout_toEndOf="@id/ImageIv"
             android:layout_below="@id/addressTv"
             style="@style/TextAppearance.MaterialComponents.Overline"
-            android:text="New"
+            android:text="@string/new_ad_button"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="5dp"
             android:textSize="12sp"/>
@@ -111,7 +111,7 @@
             style="@style/TextAppearance.MaterialComponents.Caption"
             android:layout_below="@id/addressTv"
             android:layout_toEndOf="@id/priceSymbolTv"
-            android:text="00"
+            android:text="@string/_00"
             android:layout_marginTop="4dp"
             android:textSize="12sp"/>
 
@@ -124,7 +124,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="10dp"
-            android:text="dd/MM/yyyy"
+            android:text="@string/dd_mm_yyyy"
             android:textColor="@color/light_mode_text" />
 
 

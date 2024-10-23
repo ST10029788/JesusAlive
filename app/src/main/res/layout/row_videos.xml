@@ -41,7 +41,7 @@
                     android:layout_below="@+id/titleTv"
                     android:layout_marginStart="15dp"
                     android:layout_toEndOf="@id/personIv"
-                    android:text="Full Name"
+                    android:text="@string/full_name_video"
                     android:textColor="@color/light_mode_text" />
 
                 <!-- More Options Button -->
@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/moreBtn"
                     android:layout_alignParentEnd="true"
-                    android:text="dd/MM/yyyy"
+                    android:text="@string/dd_mm_yyyy"
                     android:textColor="@color/light_mode_text" />
 
                 <TextView
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_toEndOf="@+id/personIv"
-                    android:text="#church"
+                    android:text="@string/church_video"
                     android:textColor="@color/light_mode_text" />
 
             </RelativeLayout>

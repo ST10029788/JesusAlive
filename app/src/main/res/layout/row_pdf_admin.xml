@@ -49,7 +49,7 @@
             android:layout_toEndOf="@id/pdfRl"
             android:maxLines="1"
             android:layout_toStartOf="@+id/moreBtn"
-            android:text="The Book Title"
+            android:text="@string/the_book_title"
             android:ellipsize="end"/>
 
         <!-- Description -->
@@ -64,7 +64,7 @@
             android:ellipsize="end"
             android:layout_toEndOf="@+id/pdfRl"
             android:maxLines="4"
-            android:text="The Description of Book"/>
+            android:text="@string/the_description_of_book"/>
 
         <!--Category -->
 
@@ -76,7 +76,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:maxLines="1"
-            android:text="Categories"/>
+            android:text="@string/categories"/>
 
         <!-- size -->
 
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_toEndOf="@id/pdfRl"
-            android:text="13Mb"
+            android:text="@string/_13mb"
             android:maxLines="1"/>
 
         <!--Date -->
@@ -100,7 +100,7 @@
             android:layout_toStartOf="@+id/categoryTv"
             android:layout_toEndOf="@id/sizeTv"
             android:maxLines="1"
-            android:text="dd/MM/yyyy"
+            android:text="@string/dd_mm_yyyy"
             android:textAlignment="center"/>
 
 

@@ -22,7 +22,7 @@
     android:drawableStart="@drawable/ic_search_gray"
     android:padding="5dp"
     android:textColorHint="@color/colorGray01"
-    android:hint="Search"/>
+    android:hint="@string/search_user"/>
 
     </com.google.android.material.card.MaterialCardView>
 

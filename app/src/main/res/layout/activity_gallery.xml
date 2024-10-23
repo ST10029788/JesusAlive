@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Events Feed"
+            android:text="@string/events_feed"
             android:textColor="@color/black" />
 
         <View
@@ -65,7 +65,7 @@
             app:cornerRadius="4dp"
             android:layout_marginEnd="5dp"
             app:icon="@drawable/imagegallery"
-            android:text="Images"
+            android:text="@string/images"
             android:backgroundTint="@color/light_mode_accent"
             app:iconTint="@color/white"
             android:textColor="@color/white"
@@ -82,7 +82,7 @@
             app:iconTint="@color/white"
             android:textColor="@color/white"
             android:backgroundTint="@color/light_mode_accent"
-            android:text="Videos"
+            android:text="@string/videos"
             app:cornerRadius="4dp"/>
 
 

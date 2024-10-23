@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Notice" />
+            android:text="@string/notice_detail_admin" />
 
         <View
             android:layout_width="match_parent"
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/searchEt"
-            android:hint="Search"
+            android:hint="@string/search_detail_admin"
             android:background="@android:color/transparent"
             android:padding="10dp"
             android:drawableStart="@drawable/ic_search_gray"

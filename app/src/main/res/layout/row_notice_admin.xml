@@ -43,7 +43,7 @@
             android:layout_toEndOf="@+id/noticeRl"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Notice Title" />
+            android:text="@string/row_notice_title_admin" />
 
         <TextView
             android:id="@+id/descriptionTv"
@@ -55,7 +55,7 @@
             android:layout_toEndOf="@id/noticeRl"
             android:ellipsize="end"
             android:maxLines="4"
-            android:text="Notice Description" />
+            android:text="@string/notice_description_admin" />
 
         <TextView
             android:id="@+id/dateTv"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/noticeRl"
-            android:text="dd/MM/yyyy"
+            android:text="@string/dd_mm_yyyy"
             android:textAlignment="center" />
 
         <ImageButton
