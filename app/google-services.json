@@ -12,7 +12,12 @@
           "package_name": "com.scriptsquad.reflectionsoffaith"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "35123530913-8ju2vl36p95opqui8cnchu6712it8gnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCMMx0Owpdjmix_q2iarU9oGuvj5p7fLdQ"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35123530913-8ju2vl36p95opqui8cnchu6712it8gnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

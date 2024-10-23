@@ -20,7 +20,7 @@ class Lectures_Activity : AppCompatActivity() {
 
 
         @JavascriptInterface
-        binding.webView.settings.javaScriptEnabled = true
+        this.binding.webView.settings.javaScriptEnabled = true
         binding.webView.webViewClient = WebViewClient()
         binding.webView.visibility = View.GONE
 
