@@ -136,4 +136,15 @@
     <string name="devotional_material">Devotional Material</string>
     <string name="category_devotional_admin">Category</string>
     <string name="search_devotional_admin">Search</string>
+    <string name="new_ad">New</string>
+    <string name="ddMMyyyy">dd/MM/yyyy</string>
+    <string name="dashboard_admin">Dashboard Admin</string>
+    <string name="search_dashboard">Search</string>
+    <string name="add_category_dashboard">+ Add Category</string>
+    <string name="notes">Notes</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="new_confirm_password">New Confirm Password</string>
+    <string name="change_password_button">Change Password</string>
 </resources>

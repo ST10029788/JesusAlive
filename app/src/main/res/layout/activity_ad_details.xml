@@ -110,7 +110,7 @@
                 android:layout_below="@+id/imageSliderVp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="4dp"
-                android:text="@string/new"
+                android:text="@string/new_ad"
                 android:textSize="12sp" />
 
             <TextView
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageSliderVp"
                 android:layout_alignParentEnd="true"
-                android:text="@string/dd/MM/yyyy" />
+                android:text="@string/ddMMyyyy" />
 
             <TextView
                 android:id="@+id/categoryLabelTv"
@@ -281,7 +281,8 @@
             app:iconSize="17dp"
             android:textColor="@color/white"
             app:iconTint="@color/white"
-            android:minHeight="@dimen/m_button_height"/>
+            android:minHeight="@dimen/m_button_height"
+            tools:ignore="SmallSp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/callBtn"
@@ -311,7 +312,8 @@
             app:iconTint="@color/white"
             app:iconSize="17dp"
             app:icon="@drawable/ic_sms_white"
-            android:minHeight="@dimen/m_button_height"/>
+            android:minHeight="@dimen/m_button_height"
+            tools:ignore="SmallSp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/mapBtn"

@@ -55,6 +55,11 @@
           <theme>@style/Theme.UniTalk</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_video.xml">
+        <config>
+          <theme>@style/Theme.UniTalk</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_student_materials.xml">
         <config>
           <theme>@style/Theme.UniTalk</theme>
@@ -396,12 +401,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="Sonar">
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/3cwp8cmco47iog8hcf14t5oqt/buildfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/3cwp8cmco47iog8hcf14t5oqt/buildfingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/3cwp8cmco47iog8hcf14t5oqt/projectfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/3cwp8cmco47iog8hcf14t5oqt/projectfingerprint.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/3cwp8cmco47iog8hcf14t5oqt/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/3cwp8cmco47iog8hcf14t5oqt/work.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/9vupplq3o65c0ibwrxw5yd5kv/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/9vupplq3o65c0ibwrxw5yd5kv/work.bin" afterDir="false" />
-    </list>
+    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="Extract string resources for localisation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -756,7 +756,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729580847397</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Extract string resources for localisation">
+      <option name="closed" value="true" />
+      <created>1729660794540</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729660794540</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -785,6 +793,7 @@
     <MESSAGE value="Launcher" />
     <MESSAGE value="Sanitize user inputs, forbidden words" />
     <MESSAGE value="Sonar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sonar" />
+    <MESSAGE value="Extract string resources for localisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extract string resources for localisation" />
   </component>
 </project>
