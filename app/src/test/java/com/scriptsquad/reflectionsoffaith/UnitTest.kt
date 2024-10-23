@@ -69,5 +69,5 @@ package com.scriptsquad.reflectionsoffaith
 //        verify(Utils).toast(any(), any())
 //    }
 //
-//    // More tests can be added to cover other functionalities like loading user info
+//
 //}
