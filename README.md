@@ -14,6 +14,7 @@ The Jesus Alive Ministries Church App is a mobile application designed to enhanc
 - [Usage Instructions](#usage-instructions)
 - [Contribution Guidelines](#contribution-guidelines)
 - [License](#license)
+- [Video Link](#video-link)
 
 ## Application Structure
 The application is structured as follows:
@@ -137,3 +138,6 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Video Link: 
+https://drive.google.com/drive/folders/1KRhs-EBxGe6Vkipllho2r-JUNwd8YTc-?usp=sharing 
