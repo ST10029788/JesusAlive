@@ -31,13 +31,13 @@ object Utils {
 
     //Categories array of the Ads
     val categories = arrayOf(
-        "Mobiles",
-        "Computer/Laptop",
-        "Books",
-        "Electronic",
-        "Vehicles",
-        "Uniform",
-        "All"
+        "Social Media Ads",
+        "Google Ads",
+        "Website Landing Page",
+        "Local Business",
+        "Local Events",
+        "Product Placement Ads",
+        "Public Service Ads"
     )
 
     // category icons in Array
