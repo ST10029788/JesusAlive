@@ -1,5 +1,7 @@
 # JesusAlive
 Repository for the XBCAD Module for Jesus Alive Ministries 
+# Introduction
+The Jesus Alive Ministries Church App is a mobile application designed to enhance the spiritual and community experience of churchgoers. This app provides a user-friendly platform for church members to stay connected with Jesus Alive Ministries, access devotional materials, Bibles and sermons, view notices and events, donate to various causes, and engage with the church community. The app upholds religious sensitivities and ensures privacy and security in compliance with POPIA regulations.
 
 # Project Name
 
