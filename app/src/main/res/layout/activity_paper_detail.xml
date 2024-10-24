@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Details"
+            android:text="@string/details"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/pdfRl"
-                android:text="Book Title"
+                android:text="@string/title_details"
                 android:textColor="@color/black" />
 
 
@@ -94,7 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
-                        android:text="Category"
+                        android:text="@string/category_details"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -104,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="N/A"
+                        android:text="@string/n_a"
                         android:textColor="@color/black" />
 
                 </TableRow>
@@ -117,7 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
-                        android:text="Date"
+                        android:text="@string/date"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -127,7 +127,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="N/A"
+                        android:text="@string/n_a"
                         android:textColor="@color/black" />
 
                 </TableRow>
@@ -139,7 +139,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
-                        android:text="Size"
+                        android:text="@string/size"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -149,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="N/A"
+                        android:text="@string/n_a"
                         android:textColor="@color/black" />
 
                 </TableRow>
@@ -162,7 +162,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
-                        android:text="Pages"
+                        android:text="@string/pages"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -171,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="1"
-                        android:text="N/A"
+                        android:text="@string/n_a"
                         android:textColor="@color/black" />
 
                 </TableRow>
@@ -208,7 +208,7 @@
             android:layout_weight="1"
             android:background="@color/design_default_color_primary"
             android:drawableTop="@drawable/ic_book_white"
-            android:text="Read"
+            android:text="@string/read"
             android:textColor="@color/white"
             android:textSize="10sp" />
 
@@ -219,7 +219,7 @@
             android:layout_weight="1"
             android:background="@color/design_default_color_primary"
             android:drawableTop="@drawable/ic_download_white"
-            android:text="Download"
+            android:text="@string/download"
             android:textColor="@color/white"
             android:textSize="10sp" />
 

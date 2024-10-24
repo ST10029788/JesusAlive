@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/categoryTv"
-        android:text="Category"
+        android:text="@string/category_row"
         android:textAlignment="center"
         android:textSize="10sp"
         android:layout_marginTop="5dp"

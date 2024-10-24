@@ -26,7 +26,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:padding="6dp"
-            android:text="Category Title"
+            android:text="@string/category_title_admin"
             android:textColor="@color/light_mode_text" />
 
         <ImageButton

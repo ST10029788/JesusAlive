@@ -72,12 +72,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = '11'
     }
 
     buildFeatures {
@@ -136,8 +136,8 @@ dependencies {
     // Mockito core library
     testImplementation 'org.mockito:mockito-core:5.0.0'
     testImplementation 'org.mockito:mockito-inline:5.0.0'
-    // For mocking FirebaseUser
-    testImplementation 'com.google.firebase:firebase-auth:23.1.0'
 }
+
+
 
 

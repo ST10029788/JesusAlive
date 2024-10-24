@@ -167,7 +167,7 @@ class About_Details_Activity : AppCompatActivity() {
 
             // URL to load in the web view
             // URL to load in the web view
-            val urlToLoad = "https://github.com/ST10029788/UniTalk.git"
+            val urlToLoad = getString(R.string.https_github_com_st10029788_reflectionsoffaith_git)
 
 // Only load the URL when you intend to show the WebView
             if (shouldDisplayWebView) {

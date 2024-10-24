@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Edit Profile" />
+            android:text="@string/edit_profile_page" />
 
         <View
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/profileRl"
                 android:layout_marginTop="10dp"
-                android:hint="Name"
+                android:hint="@string/name"
                 app:boxCornerRadiusBottomEnd="8dp"
                 app:boxCornerRadiusBottomStart="8dp"
                 app:boxCornerRadiusTopEnd="8dp"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nameTil"
                 android:layout_marginTop="10dp"
-                android:hint="DOB (dd/MM/yyyy)"
+                android:hint="@string/dob_dd_mm_yyyy"
                 app:boxCornerRadiusBottomEnd="8dp"
                 app:boxCornerRadiusBottomStart="8dp"
                 app:boxCornerRadiusTopEnd="8dp"
@@ -130,7 +130,7 @@
                 android:id="@+id/emailTil"
                 android:layout_below="@id/dobTil"
                 android:layout_marginTop="10dp"
-                android:hint="Email"
+                android:hint="@string/email_edit_profile"
                 app:startIconDrawable="@drawable/ic_email_white"
                 app:boxCornerRadiusBottomStart="8dp"
                 app:boxCornerRadiusBottomEnd="8dp"
@@ -175,7 +175,7 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_toEndOf="@+id/countryCodePicker"
-        android:hint="Phone Number"
+        android:hint="@string/phone_number_edit_profile"
         app:boxCornerRadiusBottomEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
         app:boxCornerRadiusTopEnd="8dp"
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/phoneInputRl"
                 android:layout_marginTop="20dp"
-                android:text="Update"
+                android:text="@string/update_button"
                 app:cornerRadius="8dp"
                 android:textColor="@color/white"
                 android:id="@+id/updateBtn"/>

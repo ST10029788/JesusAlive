@@ -43,7 +43,7 @@
                 android:layout_marginTop="18dp"
                 android:fontFamily="sans-serif-condensed"
                 android:scrollbarSize="28sp"
-                android:text="Add Notice"
+                android:text="@string/add_notice"
                 android:textColor="@color/white"
                 android:textSize="22sp" />
 
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
-            android:text="Enter Notice Title:" />
+            android:text="@string/enter_notice_title" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -85,7 +85,7 @@
                 android:drawableStart="@drawable/ic_book"
                 android:drawablePadding="10dp"
                 android:drawableTint="@color/colorGray01"
-                android:hint="Notice Title"
+                android:hint="@string/notice_title"
                 android:inputType="textPersonName|textCapSentences"
                 android:padding="10dp"
                 android:textColorHint="@color/colorGray01" />
@@ -111,7 +111,7 @@
                 android:background="@drawable/shape_edittext"
                 android:drawableStart="@drawable/ic_book"
                 android:drawablePadding="10dp"
-                android:hint="Notice Description"
+                android:hint="@string/notice_description"
                 android:inputType="textPersonName|textCapWords"
                 android:padding="10dp"
                 android:textColorHint="@color/colorGray01" />
@@ -127,7 +127,7 @@
             android:layout_below="@+id/descriptionTil"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
-            android:text="Add Image:" />
+            android:text="@string/add_image" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageIv"
@@ -163,7 +163,7 @@
             android:layout_toStartOf="@+id/imageIv"
             android:background="@drawable/shape_button01"
             android:backgroundTint="@null"
-            android:text="Select Notice Image"
+            android:text="@string/select_notice_image"
             android:textColor="@color/white"
             android:textColorLink="@color/light_mode_light_accent"
             app:icon="@drawable/ic_add_photo_white"
@@ -177,7 +177,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/shape_button01"
-            android:text="Publish Notice"
+            android:text="@string/publish_notice"
             android:textColor="@color/white"
             app:backgroundTint="@null"
             app:icon="@drawable/ic_book"
@@ -192,7 +192,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/shape_button01"
-            android:text="See Posted Notices"
+            android:text="@string/see_posted_notices"
             android:textColor="@color/white"
             app:backgroundTint="@null"
             app:icon="@drawable/ic_book"

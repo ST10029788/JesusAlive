@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
         android:padding="5dp"
-        android:text="Add Comment"
+        android:text="@string/add_comment"
         android:textAlignment="center"
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:textSize="16sp"
@@ -35,7 +35,7 @@
         android:layout_below="@+id/backBtn"
         android:layout_marginTop="20dp"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-        android:hint="Comment"
+        android:hint="@string/comment"
         app:boxCornerRadiusBottomEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
         app:boxCornerRadiusTopEnd="8dp"
@@ -58,7 +58,7 @@
         android:minHeight="55dp"
         android:layout_below="@+id/commentTil"
         android:layout_marginTop="20dp"
-        android:text="Submit"
+        android:text="@string/submit_comment"
        app:cornerRadius="8dp"
         android:textColor="@color/white"/>
 

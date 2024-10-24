@@ -43,7 +43,7 @@
             android:layout_toEndOf="@id/pdfRl"
             android:ellipsize="end"
             android:maxLines="2"
-            android:text="Paper Title" />
+            android:text="@string/paper_title" />
 
         <TextView
             android:id="@+id/categoryTv"
@@ -54,7 +54,7 @@
             android:layout_marginTop="4dp"
             android:layout_toEndOf="@id/pdfRl"
             android:maxLines="1"
-            android:text="Category with long text" />
+            android:text="@string/category_with_long_text" />
 
         <TextView
             android:id="@+id/sizeTv"
@@ -65,7 +65,7 @@
             android:layout_marginTop="4dp"
             android:layout_toEndOf="@id/pdfRl"
             android:maxLines="1"
-            android:text="14 MB" />
+            android:text="@string/_14_mb" />
 
         <TextView
             android:id="@+id/dateTv"
@@ -74,7 +74,7 @@
             android:layout_below="@id/sizeTv"
             android:layout_marginTop="4dp"
             android:layout_toEndOf="@id/pdfRl"
-            android:text="dd/MM/yyyy"
+            android:text="@string/dd_mm_yyyy"
             android:textAlignment="center" />
 
         <ImageButton

@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
-            android:text="Read Book"
+            android:text="@string/read_book"
             android:textColor="@color/white" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbarTitleTv"
             android:layout_centerHorizontal="true"
-            android:text="N/A"
+            android:text="@string/n_a"
             android:textColor="@color/white"
             android:textSize="12sp" />
 

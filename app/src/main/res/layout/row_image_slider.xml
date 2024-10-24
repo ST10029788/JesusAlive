@@ -19,6 +19,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:padding="10dp"
-        android:text="1/3"/>
+        android:text="@string/_1_3"/>
 
 </RelativeLayout>

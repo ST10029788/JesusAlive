@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/TextAppearance.MaterialComponents.Headline6"
-            android:text="Notice Title"
+            android:text="@string/row_notice_title"
             android:layout_toEndOf="@+id/noticeRl"
             android:ellipsize="end"
             android:maxLines="1"/>
@@ -49,7 +49,7 @@
             android:id="@+id/descriptionTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notice Description"
+            android:text="@string/row_notice_description"
             android:layout_toEndOf="@id/noticeRl"
             android:layout_below="@+id/titleTv"
             android:ellipsize="end"
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/noticeRl"
-            android:text="dd/MM/yyyy"
+            android:text="@string/dd_mm_yyyy"
             android:layout_alignParentBottom="true"
             android:textAlignment="center"/>
 

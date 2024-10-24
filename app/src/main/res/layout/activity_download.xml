@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="8dp"
-            android:text="Downloading Video"
+            android:text="@string/downloading_video"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />

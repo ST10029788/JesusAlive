@@ -30,11 +30,11 @@
             android:layout_height="wrap_content"
            android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
-            android:text="Papers" />
+            android:text="@string/materials_pdf" />
 
         <TextView
             android:id="@+id/subTitleTv"
-            android:text="Category"
+            android:text="@string/category_materials"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_below="@+id/toolbarTitleTv"
@@ -69,7 +69,7 @@
             android:drawableStart="@drawable/ic_search_gray"
             android:drawablePadding="10dp"
             android:background="@android:color/transparent"
-            android:hint="Search"
+            android:hint="@string/search_materials_eT"
             android:padding="10dp"
             android:textColorHint="@color/colorGray01" />
 

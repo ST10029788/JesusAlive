@@ -70,15 +70,9 @@ class Register_Using_Email_Activity : AppCompatActivity() {
         Log.d(TAG, "validateData: password :$password")
         Log.d(TAG, "validateData: confirmPassword :$cPassword")
 
-        // Define the allowed email domains
-        val allowedDomains = listOf("@vcconnect.edu.za", "@iie.ac.za", "@varsitycollege.co.za")
-
-        // Validate email domain
+        // Validate email pattern
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             binding.emailEt.error = "Invalid Email Pattern"
-            binding.emailEt.requestFocus()
-        } else if (!allowedDomains.any { email.endsWith(it) }) {
-            binding.emailEt.error = "Email domain not allowed. Use @vcconnect.edu.za, @iie.ac.za, or @varsitycollege.co.za"
             binding.emailEt.requestFocus()
         } else if (password.isEmpty()) {
             binding.passwordEt.error = "Enter Password"
@@ -114,6 +108,7 @@ class Register_Using_Email_Activity : AppCompatActivity() {
         // Replace unwanted characters (if necessary)
         return input.replace("[^\\w@!#$%^&*()-=_+<>?,.;:']".toRegex(), "")
     }
+
 
 
     // Method to register the user

@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_toEndOf="@+id/profileIv"
-            android:text="Person Name"
+            android:text="@string/person_name"
             android:textColor="@color/light_mode_text"
             android:textSize="16sp" />
 
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"
-            android:text="dd/MM/yyyy"
+            android:text="@string/dd_mm_yyyyy"
             android:textColor="#787878"
             android:textSize="12sp" />
 
@@ -50,7 +50,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/profileIv"
-            android:text="The Comment of the User"
+            android:text="@string/the_comment_of_the_user"
             android:textColor="@color/light_mode_text"
             android:textSize="12sp" />
 
