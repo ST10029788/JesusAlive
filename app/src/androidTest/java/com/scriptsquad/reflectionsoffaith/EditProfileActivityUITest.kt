@@ -13,7 +13,11 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.scriptsquad.reflectionsoffaith.Account.Edit_Profile_Activity
 import com.scriptsquad.reflectionsoffaith.R
+import android.os.IBinder
+import android.view.WindowManager
+import org.hamcrest.Description
 import org.hamcrest.Matcher
+import org.hamcrest.TypeSafeMatcher
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -62,9 +66,27 @@ class EditProfileActivityTest {
         onView(withText("Profile Updated Successfully")).inRoot(ToastMatcher()).check(matches(isDisplayed()))
     }
 
-    private fun ToastMatcher(): Matcher<Root> {
-        return TODO("Provide the return value")
+    fun ToastMatcher(): Matcher<Root> {
+        return object : TypeSafeMatcher<Root>() {
+
+            override fun describeTo(description: Description) {
+                description.appendText("is toast")
+            }
+
+            override fun matchesSafely(root: Root?): Boolean {
+                // Check if the window type is toast
+                val type = root?.windowLayoutParams?.get()?.type
+                if (type == WindowManager.LayoutParams.TYPE_TOAST) {
+                    // Check if the toast's window token is the same as the application window token
+                    val windowToken: IBinder = root.decorView.windowToken
+                    val appToken: IBinder = root.decorView.applicationWindowToken
+                    return windowToken === appToken
+                }
+                return false
+            }
+        }
     }
+
 
     @Test
     fun testInvalidEmailInput() {
