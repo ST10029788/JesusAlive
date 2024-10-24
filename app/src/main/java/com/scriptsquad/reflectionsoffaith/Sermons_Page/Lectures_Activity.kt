@@ -40,10 +40,14 @@ class Lectures_Activity : AppCompatActivity() {
         val spinner: Spinner = binding.spinnerMain
         val listItem = listOf<String>(
             "--- Select your Category ---",
-            "BCAD 1st year",
-            "BCAD 2nd year",
-            "BCAD 3rd year"
-
+            "God Problems",
+            "How to Build Godly Confidence",
+            "The Good Shepard",
+            "Overcoming Worry",
+            "The Hope that Saw Beyond the Pain",
+            "Is Anything Too Difficult?",
+            "Old Testament",
+            "New Testament"
 
         )
 
