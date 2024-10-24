@@ -248,6 +248,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/missionSeparatorView"
+                            android:layout_marginTop="43dp"
                             android:text="@string/mission_thisApp_text"
                             android:textColor="#100307"
                             android:textSize="16sp" />

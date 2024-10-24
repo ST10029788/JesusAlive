@@ -29,7 +29,7 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UniTalk"
+        android:theme="@style/Theme.RoF"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
@@ -201,7 +201,7 @@
         <!-- Image Cropper -->
         <activity
             android:name="com.canhub.cropper.CropImageActivity"
-            android:theme="@style/Theme.UniTalk"
+            android:theme="@style/Theme.RoF"
         />
     </application>
 

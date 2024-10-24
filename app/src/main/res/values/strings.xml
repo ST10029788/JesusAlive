@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UniTalk</string>
+    <string name="app_name">Reflections of Faith</string>
     <string name="bottom_menu_home">Home</string>
     <string name="bottom_menu_chats">Chats</string>
     <string name="bottom_menu_sell">Sell</string>
@@ -22,8 +22,8 @@
     <string name="image_btn">Image button</string>
     <string name="price_symbol">Rs</string>
     <string name="ad_favourite_btn">Ad favourite Button</string>
-    <string name="myName">ScriptSquad<b>(OPSC7312)</b></string>
-    <string name="mission_thisApp_text">The purpose of this App is to provide students an easy access to Student Materials, Past Papers, Notes, and IT Video Lectures.It also provides students with a platform to sell and purchase items.A chat platform also helps them discuss their thoughts. Notice Board for Instant notices.</string>
+    <string name="myName">ScriptSquad<b>(Reflections of Faith)</b></string>
+    <string name="mission_thisApp_text">The Jesus Alive Ministries Church App is a mobile application designed to enhance the spiritual and community experience of churchgoers. This app provides a user-friendly platform for church members to stay connected with Jesus Alive Ministries, access devotional materials, Bibles and sermons, view notices and events, donate to various causes, and engage with the church community. The app upholds religious sensitivities and ensures privacy and security in compliance with POPIA regulations.</string>
     <string name="about_thisApp_text">This App is developed by <b>Script Squad</b>.As final Year Project for our OPSC7312 module</string>
     <string name="linkedin">Links</string>
     <string name="resume">OPSC</string>
@@ -51,7 +51,7 @@
     <string name="pdf_upload_Btn">Pdf Upload Btn</string>
     <string name="addCommentBtn">Add Comment Btn</string>
     <string name="more_Btn">More Btn</string>
-    <string name="contact">Thank you for considering UniTalk.</string>
+    <string name="contact">Thank you for considering Reflections of Faith.</string>
     <string name="my_google_map_api_key">AIzaSyA1Dc-f4vIPvewKUkRMHXWj30kBNO3ATIw</string>
     <string name="gimni_api_key">AIzaSyBmupJEwQoFtb9xtQOJXhM064h5n7x2-S0</string>
     <string name="about_us">About Us</string>
@@ -288,7 +288,7 @@
     <string name="search_ads">Search</string>
     <string name="search_fav">Search</string>
     <string name="the_ad_title">The Ad Title</string>
-    <string name="the_long_description_of_the_ad_thst_can_be_of_multiple_lines_but_will_show_here_in_3_lines">The long description of the Ad thst can be of multiple lines but will show here in 3 lines</string>
+    <string name="the_long_description_of_the_ad_thst_can_be_of_multiple_lines_but_will_show_here_in_3_lines">The long description of the Ad that can be of multiple lines but will show here in 3 lines</string>
     <string name="address_of_the_ad">Address of the Ad</string>
     <string name="new_ad_button">New</string>
     <string name="category_row">Category</string>
@@ -323,4 +323,5 @@
     <string name="church_video">#church</string>
     <string name="welcome_to_chat_room">Welcome To Chat Room</string>
     <string name="do_not_use_obscene_offensive_or_sexually_explicit_language">Do not use obscene, offensive, or sexually explicit language</string>
+    <string name="https_github_com_st10029788_reflectionsoffaith_git">https://github.com/ST10029788/ReflectionsOfFaith.git</string>
 </resources>

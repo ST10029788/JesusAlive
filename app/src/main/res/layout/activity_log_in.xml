@@ -49,7 +49,7 @@
                 android:textStyle="bold"
                 app:backgroundTint="@color/light_mode_light_accent"
                 app:iconTint="@color/light_mode_light_accent"
-                app:rippleColor="@color/light_mode_accent"
+                app:rippleColor="@color/light_mode_light_accent"
                 app:strokeColor="@color/light_mode_text" />
 
             <com.google.android.material.button.MaterialButton

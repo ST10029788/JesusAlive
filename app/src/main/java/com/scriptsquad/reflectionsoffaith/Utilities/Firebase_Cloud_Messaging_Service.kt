@@ -25,7 +25,7 @@ class Firebase_Cloud_Messaging_Service : FirebaseMessagingService() {
 
         //Notification Channel ID
 
-        private const val NOTIFICATION_CHANNEL_ID = "UNITALK_CHANNEL_TO"
+        private const val NOTIFICATION_CHANNEL_ID = "RoF_CHANNEL_TO"
 
     }
 
