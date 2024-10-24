@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.scriptsquad.reflectionsoffaith.account.activities
 
 import android.content.Intent
