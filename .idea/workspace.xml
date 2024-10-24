@@ -396,10 +396,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="Activity UI Test">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="Change Password Activity UI Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/scriptsquad/reflectionsoffaith/ActivityUITest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/scriptsquad/reflectionsoffaith/ActivityUITest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -821,7 +819,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729764111965</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Change Password Activity UI Test">
+      <option name="closed" value="true" />
+      <created>1729769629989</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729769629989</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -850,6 +856,7 @@
     <MESSAGE value="Launcher" />
     <MESSAGE value="Sanitize user inputs, forbidden words" />
     <MESSAGE value="Activity UI Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Activity UI Test" />
+    <MESSAGE value="Change Password Activity UI Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Password Activity UI Test" />
   </component>
 </project>
