@@ -97,24 +97,25 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="649dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/bgDash"
         android:contentDescription="@string/hello">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/light_mode_light_accent">
+            android:background="@color/light_mode_light_accent"
+            tools:ignore="ExtraText">
 
             <GridLayout
                 android:id="@+id/gridLayout"
-                android:layout_width="387dp"
-                android:layout_height="650dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="25dp"
-                android:columnCount="2"
-                android:rowCount="7"
-                tools:ignore="ExtraText">
+                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:columnCount="2"
+            android:rowCount="7"
+            tools:ignore="ExtraText">
 
 
                 <androidx.cardview.widget.CardView
