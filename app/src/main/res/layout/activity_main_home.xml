@@ -97,7 +97,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="664dp"
+        android:layout_height="649dp"
         android:layout_below="@id/bgDash"
         android:contentDescription="@string/hello">
 
