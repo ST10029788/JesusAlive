@@ -24,6 +24,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Set JAVA_HOME to JDK 17 path
+        run: echo "JAVA_HOME=${{ env.JAVA_HOME_17_X64 }}" >> $GITHUB_ENV
+
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@7295e71c9583053f5bf40e9d4068a0c974603ec8
         env:
