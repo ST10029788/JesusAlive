@@ -2,6 +2,7 @@
 # Reflections of Faith
 
 Repository for the XBCAD Module for Jesus Alive Ministries.
+All supporting documentation found [here](https://drive.google.com/drive/folders/1KRhs-EBxGe6Vkipllho2r-JUNwd8YTc-?usp=sharing)
 
 ## Introduction
 
