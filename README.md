@@ -6,6 +6,9 @@ All supporting documentation found [here](https://drive.google.com/drive/folders
 
 Figma Wireframes can be found [here](https://www.figma.com/design/DcaXUXl4wDbnxy2uZmPJGY/Reflections-of-Faith?node-id=9-2&t=9gjmUDTCxQWXLELS-1)
 
+Watch the demo video [here](https://drive.google.com/drive/folders/1KRhs-EBxGe6Vkipllho2r-JUNwd8YTc-?usp=sharing).
+
+
 ## Introduction
 
 The **Jesus Alive Ministries Church App** is a mobile application designed to enhance the spiritual and community experience of churchgoers. It offers a user-friendly platform where church members can stay connected with Jesus Alive Ministries, access devotional materials, view sermons, track events, donate to causes, and engage with the community. The app respects religious sensitivities and ensures privacy, adhering to POPIA regulations.
