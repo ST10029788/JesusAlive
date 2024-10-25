@@ -48,6 +48,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
+          distribution: 'temurin'
       - name: Analyze with SonarQube
 
         # You can pin the exact commit or the version.
