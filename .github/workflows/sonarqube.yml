@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  pull-requests: read  # Allows SonarQube to decorate PRs with analysis results
+  pull-requests: read
 
 jobs:
   Analysis:
@@ -24,19 +24,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Force JAVA_HOME for Docker
-        run: echo "JAVA_HOME=/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.*/x64" >> $GITHUB_ENV
-
-      - name: Analyze with SonarQube
-        uses: SonarSource/sonarqube-scan-action@7295e71c9583053f5bf40e9d4068a0c974603ec8
-        env:
-          JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.*/x64
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        with:
-          args: |
-            -Dsonar.projectKey=ReflectionsOfFaith
-            -Dsonar.sources=src
-            -Dsonar.tests=test
+      - name: Run SonarScanner with Java 17
+        run: |
+          docker run --rm \
+            -e SONAR_TOKEN=${{ secrets.SONAR_TOKEN }} \
+            -e SONAR_HOST_URL=${{ secrets.SONAR_HOST_URL }} \
+            -v "${{ github.workspace }}:/usr/src" \
+            sonarsource/sonar-scanner-cli:latest-jdk17 \
+            -Dsonar.projectKey=ReflectionsOfFaith \
+            -Dsonar.sources=src \
+            -Dsonar.tests=test \
             -Dsonar.verbose=true
