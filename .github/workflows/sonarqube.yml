@@ -24,6 +24,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Force JAVA_HOME for Docker
+        run: echo "JAVA_HOME=/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.*/x64" >> $GITHUB_ENV
+
       - name: Analyze with SonarQube
         uses: SonarSource/sonarqube-scan-action@7295e71c9583053f5bf40e9d4068a0c974603ec8
         env:
@@ -37,4 +40,3 @@ jobs:
             -Dsonar.sources=src
             -Dsonar.tests=test
             -Dsonar.verbose=true
-
