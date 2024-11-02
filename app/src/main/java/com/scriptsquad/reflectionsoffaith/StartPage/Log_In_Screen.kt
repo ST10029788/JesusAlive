@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.biometric.BiometricPrompt
+import androidx.biometric.BiometricManager
+import androidx.core.content.ContextCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -63,7 +65,42 @@ class Log_In_Screen : AppCompatActivity() {
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
 
-//
+        // Initialize BiometricPrompt
+        val executor = ContextCompat.getMainExecutor(this)
+        biometricPrompt = BiometricPrompt(this, executor, object : BiometricPrompt.AuthenticationCallback() {
+            override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
+                super.onAuthenticationError(errorCode, errString)
+                Log.e(TAG, "Authentication error: $errString")
+                Utils.toast(this@Log_In_Screen, "Authentication error: $errString")
+            }
+
+            override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
+                super.onAuthenticationSucceeded(result)
+                Log.d(TAG, "Authentication succeeded")
+                // Proceed to the main screen after successful authentication
+                startActivity(Intent(this@Log_In_Screen, Main_Home_Screen::class.java))
+                finishAffinity()
+            }
+
+            override fun onAuthenticationFailed() {
+                super.onAuthenticationFailed()
+                Log.e(TAG, "Authentication failed")
+                Utils.toast(this@Log_In_Screen, "Authentication failed")
+            }
+        })
+
+        // Create prompt info
+        promptInfo = BiometricPrompt.PromptInfo.Builder()
+            .setTitle("Biometric Login")
+            .setSubtitle("Log in using your biometric credential")
+            .setNegativeButtonText("Use account password")
+            .build()
+
+        // Set click listener for biometric button
+        binding.LogInBiometricBtn.setOnClickListener {
+            authenticateUser ()
+        }
+
         binding.LogInEmailBtn.setOnClickListener {
             startActivity(Intent(this@Log_In_Screen, Log_In_Using_Email_Activity::class.java))
         }
@@ -83,11 +120,33 @@ class Log_In_Screen : AppCompatActivity() {
             startActivity(Intent(this@Log_In_Screen, Register_Using_Email_Activity::class.java)) // Replace SignUpActivity with your actual sign-up activity class
         }
 
+
+
     }
 
     //method used from YouTube
     //https://youtu.be/KJ3ChWp0Qd0?si=IVsBM_mGkUYfSmAF
     //channel: Coding Meet
+
+    private fun authenticateUser () {
+        // Check if biometric authentication is available
+        val biometricManager = BiometricManager.from(this)
+        when (biometricManager.canAuthenticate()) {
+            BiometricManager.BIOMETRIC_SUCCESS -> {
+                biometricPrompt.authenticate(promptInfo)
+            }
+            BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE -> {
+                Utils.toast(this, "No biometric features available on this device.")
+            }
+            BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE -> {
+                Utils.toast(this, "Biometric features are currently unavailable.")
+            }
+            BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> {
+                Utils.toast(this, "No biometric credentials enrolled.")
+            }
+        }
+    }
+
     private fun createDefaultAdminAccount() {
         val email = "admin@varsitycollege.co.za"
         val password = "admin123"
