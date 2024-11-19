@@ -65,10 +65,17 @@ class Register_Using_Email_Activity : AppCompatActivity() {
         password = sanitizePassword(binding.passwordEt.text.toString().trim())
         cPassword = sanitizePassword(binding.ConfirmpasswordEt.text.toString().trim())
 
+        // Mask the email and password before logging
+        val maskedEmail = maskEmail(email)
+        val maskedPassword = maskPassword(password)
+        val maskedCPassword = maskPassword(cPassword)
+
+        // Log the sanitized/ masked data for debugging purposes
+        Log.d(TAG, "validateData: email :$maskedEmail")
+        Log.d(TAG, "validateData: password :$maskedPassword")
+        Log.d(TAG, "validateData: confirmPassword :$maskedCPassword")
         // Log the user's input data for debugging purposes
-        Log.d(TAG, "validateData: email :$email")
-        Log.d(TAG, "validateData: password :$password")
-        Log.d(TAG, "validateData: confirmPassword :$cPassword")
+
 
         // Validate email pattern
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
@@ -89,6 +96,22 @@ class Register_Using_Email_Activity : AppCompatActivity() {
         } else {
             registerUser()
         }
+    }
+
+
+    // Method to mask email (show only first and last few characters)
+    private fun maskEmail(email: String): String {
+        val parts = email.split("@")
+        if (parts.size == 2) {
+            val maskedLocal = parts[0].take(1) + "***" + parts[0].takeLast(1)
+            return "$maskedLocal@${parts[1]}"
+        }
+        return "Invalid Email"
+    }
+
+    // Method to mask passwords (replace all characters with asterisks)
+    private fun maskPassword(password: String): String {
+        return "*".repeat(password.length)
     }
 
     // Method to sanitize name
