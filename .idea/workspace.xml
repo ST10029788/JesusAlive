@@ -407,10 +407,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="address sonar scan">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-af-rZA/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-af-rZA/strings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0c0be9f2-254a-4815-996c-714d5bfffd2b" name="Changes" comment="afrikaans translations" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -901,7 +898,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731997531636</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="afrikaans translations">
+      <option name="closed" value="true" />
+      <created>1731997601582</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1731997601582</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -917,7 +922,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Upgrade java" />
     <MESSAGE value="Build errors" />
     <MESSAGE value="SonarQube" />
     <MESSAGE value="Edit wording" />
@@ -942,6 +946,7 @@
     <MESSAGE value="About Us Page Update" />
     <MESSAGE value="Update" />
     <MESSAGE value="address sonar scan" />
-    <option name="LAST_COMMIT_MESSAGE" value="address sonar scan" />
+    <MESSAGE value="afrikaans translations" />
+    <option name="LAST_COMMIT_MESSAGE" value="afrikaans translations" />
   </component>
 </project>
