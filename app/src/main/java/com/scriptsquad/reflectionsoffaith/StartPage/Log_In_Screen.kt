@@ -54,8 +54,6 @@ class Log_In_Screen : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        // Create a default admin account if it doesn't exist
-        createDefaultAdminAccount()
 
         // Configure Google sign-in options
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -147,32 +145,6 @@ class Log_In_Screen : AppCompatActivity() {
         }
     }
 
-    private fun createDefaultAdminAccount() {
-        val email = "admin@varsitycollege.co.za"
-        val password = "admin123"
-
-        firebaseAuth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    val uid = task.result.user!!.uid
-
-                    // Assign the admin role to the user
-                    val hashMap = HashMap<String, Any>()
-                    hashMap["role"] = "admin"
-
-                    val ref = FirebaseDatabase.getInstance().getReference("Users")
-                    ref.child(uid).updateChildren(hashMap)
-                        .addOnSuccessListener {
-                            Log.d(TAG, "Default admin account created successfully")
-                        }
-                        .addOnFailureListener { e ->
-                            Log.e(TAG, "Error creating default admin account", e)
-                        }
-                } else {
-                    Log.e(TAG, "Error creating default admin account", task.exception)
-                }
-            }
-    }
     private val email: String = "guestuser@gmail.com"
     private val password: String = "1234guest"
 
