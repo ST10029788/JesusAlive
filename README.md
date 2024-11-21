@@ -6,7 +6,7 @@ All supporting documentation found [here](https://drive.google.com/drive/folders
 
 Figma Wireframes can be found [here](https://www.figma.com/design/DcaXUXl4wDbnxy2uZmPJGY/Reflections-of-Faith?node-id=9-2&t=9gjmUDTCxQWXLELS-1)
 
-Watch the demo video [here](https://drive.google.com/drive/folders/1KRhs-EBxGe6Vkipllho2r-JUNwd8YTc-?usp=sharing).
+Watch the demo video [here](https://drive.google.com/drive/folders/13IY6ba-TO8VBaLGxAMltOcKXUvyRxRGF?usp=sharing).
 
 
 ## Introduction
